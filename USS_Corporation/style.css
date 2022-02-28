@@ -1,0 +1,212 @@
+*,body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+/* the chances of this happening are slim but if catzerz smowhow scams me. this wil be my proof*/
+
+body{
+    background-color: rgb(59, 59, 59);
+}
+nav{
+    background-color: rgb(120, 54, 182);
+    width: 100%;
+    height: 50px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+#menu_icon{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.content button{
+    height: 45px;
+    width: 300px;
+    background-color: transparent;
+    margin-top: 1%;
+    margin-left: 3%;
+    border: 3px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: aqua;
+    transition: ease-in 0.3s;
+}
+.content{
+    width: 50%;
+    float: left;
+}
+.content h1{
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 45%;
+}
+.content h2{
+    margin-left: 3%;
+    margin-top: 1%;
+    width: 45%;
+}
+.catalog{
+    width: 45%;
+    height: 55%;
+    background-color: transparent;
+    float: right;
+    border: 3px solid white;
+    margin-top: 30px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+.catalog img{
+    width: 75px;
+    height: 75px;
+}
+.discord{
+    background-color: transparent;
+    width: 55%;
+    height: 378.8px;
+    float: left;
+    margin: 2px;
+    text-align: center;
+    border: 2px solid blue;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+.roblox{
+    background-color: transparent;
+    width: 40%;
+    right: 0;
+    float: right;
+    text-align: center;
+    margin: 2px;
+    border: 2px solid red;
+}
+.spotify{
+    background-color: transparent;
+    width: 40%;
+    right: 0;
+    float: right;
+    text-align: center;
+    margin: 2px;
+    border: 2px solid greenyellow;
+}
+.catalog button{
+    background-color: rgb(0, 255, 0);
+}
+.discord img{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+.discord button{
+    margin-top: 20px;
+}
+.catalog button{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.catalog button:hover{
+    background-color: aqua;
+    transition: ease 0.5s;
+}
+
+
+
+
+
+
+@media only screen and (max-width:680px){
+    nav{
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 80%;
+        right: -80%;
+        position: fixed;
+        overflow: hidden;
+        transition: ease 750ms
+    }
+    #menu_icon{
+        display: block;
+    }
+    .menu_img{
+        width: 100%;
+        background-color: rgb(120, 54, 182);
+    }
+    nav ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 37vh;
+    }
+    nav ul li a{
+        font-size: 8vw;
+        font-weight: bold;
+    }
+    .content{/* Made by Shin_RS */
+        width: 100%;
+        height: 250px;
+        float: unset;
+    }
+    .content h1{
+        text-align: center;
+        width: 100vw;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .content h2{
+        text-align: center;
+        width: 100vw;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .content button{
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 1%;
+    }
+    .content a{
+        width: 0;
+        height: 0;
+    }
+    .catalog{
+        float: unset;
+        width: 90%;
+        height: 90%;
+        margin: 0;
+        margin-left: 5%;
+    }
+    .catalog_p{
+        
+        align-self: center;
+        display: flex;
+        text-align: center;
+    }
+    .discord{
+        width: 97%;
+        height: 250px;
+    }
+    .roblox{
+        width: 97%;
+        height: 200px;
+    }
+    .spotify{
+        width: 97%;
+        height: 220px;
+    }
+}

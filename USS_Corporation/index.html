@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USS Corporations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topbar">
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace/index.html">Marketplace</a></li>
+                <li><a href="about _us/index.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu_img">
+            <img src="menuicon.png" id="menu_icon" onClick="toggleMenu()">
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>Get Latest Memberships<br>And Subsrciptions</h1>
+        <h2>at the best prices</h2>
+        <a href="../marketplace/index.html">
+        <button>
+            View Marketplace
+        </button>
+        </a>
+    </div>
+
+    <script>
+
+        const button = document.getElementById("menu_icon");
+        const navbar = document.getElementById("navbar");
+
+        function toggleMenu(){
+
+            if (navbar.style.right == "-80%"){
+                navbar.style.right = "0";
+            } else {
+                navbar.style.right = "-80%"
+            }
+        }
+
+    </script>
+
+    <div class="catalog_p">
+
+    <div class="catalog">
+        <div class="discord">
+            <img src="discordlogo.png">
+            <h3>Discord</h3>
+            <p>Get you hands on<br>discord nitro and<br>server boosts</p>
+            <a href="../products/discord/index.html"><button>Check Offers</button></a>
+        </div>
+        <div class="roblox">
+            <img src="rblxlogo.png">
+            <h3>Roblox</h3>
+            <p>Get roblox premium<br>at the best<br>prices of all time.</p>
+            <a href="../products/roblox/index.html"><button>Check Offers</button></a>
+        </div>
+        <div class="spotify">
+            <img src="spotifylogo.png">
+            <h3>spotify</h3>
+            <p>Get spotify premium<br> account and get<br> access to more<br> features</p>
+            <a href="../products/spotify/index.html"><button>Check Offers</button></a>
+        </div>
+    </div>
+
+    </div>
+    
+</body>
+</html>

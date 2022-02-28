@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USS Corporations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../marketplace/index.html">Marketplace</a></li>
+            <li><a href="../about _us/index.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="menu_img">
+        <img src="menuicon.png" id="menu_icon" onClick="toggleMenu()">
+    </div>
+
+    <script>
+
+        const button = document.getElementById("menu_icon");
+        const navbar = document.getElementById("navbar");
+
+        function toggleMenu(){
+
+            if (navbar.style.right == "-80%"){
+                navbar.style.right = "0";
+            } else {
+                navbar.style.right = "-80%"
+            }
+        }
+
+    </script>
+
+    <div class="products">
+        <div class="discord">
+            <img src="discordlogo.png">
+            <h3>Discord nitro and Discord Server boosts</h3>
+            <p>Discord is a huge social media platform. Why shouldn't we take its full advantage?
+                <br><br>Discord Nitro: £5.00<br>Server Boost: £2.00
+            </p>
+            
+            <a href="../products/discord/index.html">
+                <button class="buy_button">
+                    Buy Nitro
+                </button>
+            </a>
+            <a href="../products/discord/index.html">
+                <button class="buy_button">
+                    Buy Server Boost
+                </button>
+            </a>
+        </div>
+
+        <div class="roblox">
+            <img src="rblxlogo.png">
+            <h3>Roblox Premium</h3>
+            <p>Roblox is one of the biggest online game community. Having premium must be fun.
+                <br><br>Roblox Premium: £3.00
+            </p>
+            
+            <a href="../products/roblox/index.html">
+                <button class="buy_button">
+                    Buy Roblox Premium
+                </button>
+            </a>
+        </div>
+
+        <div class="spotify">
+            <img src="spotifylogo.png">
+            <h3>Spotify Premium</h3>
+            <p>Spotify is like one of the best music library. Its premium unlocks much more to do.
+                <br><br>Spotify Premium: £5.00
+            </p>
+            
+            <a href="../products/spotify/index.html">
+                <button class="buy_button">
+                    Buy Spotify Premium
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

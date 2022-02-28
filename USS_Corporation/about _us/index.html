@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USS Corporations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../marketplace/index.html">Marketplace</a></li>
+            <li><a href="../about _us/index.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="menu_img">
+        <img src="menuicon.png" id="menu_icon" onClick="toggleMenu()">
+    </div>
+
+    <div class="content">
+        <h3>Who are we?</h3>
+        <p>We basically are subscription resellers, We try our best to provide you with quick and accurate results. We are new in 
+        it and have very little experience. But we will always try our best to be as good as possible.
+        </p>
+
+        <h3>
+            What is our goal?
+        </h3>
+        <p>Our main goal is to save up some of your money which you spend on subscriptions and memberships. We are skilled enough
+        to at very least provide you the best value for money deals.
+        </p>
+        <h3>
+            How long it takes to purchase?
+        </h3>
+        <p>Well, it totally depends on the amount of orders or if we are busy, then it may take up to <b>24 Hours</b> but if we
+        dont have any orders pending or we are not busy. We will instantly reply.</p>
+    </div>
+
+    <script>
+
+        const button = document.getElementById("menu_icon");
+        const navbar = document.getElementById("navbar");
+
+        function toggleMenu(){
+
+            if (navbar.style.right == "-80%"){
+                navbar.style.right = "0";
+            } else {
+                navbar.style.right = "-80%"
+            }
+        }
+
+    </script>
+</body>
+</html>

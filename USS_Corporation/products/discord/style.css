@@ -1,0 +1,92 @@
+*,body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    background-color: rgb(59, 59, 59);
+}
+nav{
+    background-color: rgb(120, 54, 182);
+    width: 100%;
+    height: 50px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+#menu_icon{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.content{
+    margin: 20px;
+    align-items: center;
+}
+.text{
+    display: block;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contacts{
+    text-align: center;
+    margin-top: 30px;
+}
+.all_the_stuff{
+    align-items: center;
+    text-align: center;
+}/* Made by Shin_RS */
+
+@media only screen and (max-width:680px){
+    nav{
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 80%;
+        right: -80%;
+        position: fixed;
+        overflow: hidden;
+        transition: ease 750ms
+    }
+    #menu_icon{
+        display: block;
+    }
+    .menu_img{
+        width: 100%;
+        background-color: rgb(120, 54, 182);
+    }
+    nav ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 37vh;
+    }
+    nav ul li a{
+        font-size: 8vw;
+        font-weight: bold;
+    }
+} 

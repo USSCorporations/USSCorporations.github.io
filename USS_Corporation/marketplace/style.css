@@ -173,6 +173,12 @@ nav ul li{
         width: 100px;
         height: 100px;
         display: block;
-        margin-left: 32%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .discord h3{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 } 
